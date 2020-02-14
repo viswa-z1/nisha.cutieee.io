@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css?family=poppins:400,500,600,700,800,900&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins', sans-serif;
+
+}
+
+#s
+{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	background: #000200;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#s h2
+{
+	color: transparent;
+	font-weight: 850;
+	font-size: 6em;
+	-webkit-text-stroke: 2px #fff;
+
+}
+
+#s .love
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	animation: animate 8s ease-in-out infinite,
+               backgroundmove 16s linear infinite;
+}
+
+#s .love.love1
+{
+	animation-delay: 0s;
+	background: url(star1.png);
+}
+
+#s .love.love2
+{
+	animation-delay: -1s;
+	background: url(star2.png);
+}
+
+#s .love.love3
+{
+	animation-delay: -2s
+	background: url(star3.png);
+}
+
+#s .love.love4
+{
+	animation-delay: -3s;
+	background: url(star4.png);
+}
+
+#s .love.love5
+{
+	animation-delay: -4s;
+	background: url(star5.png);
+}
+
+
+#s .love.love6
+{
+	animation-delay: -5s;
+	background: url(star6.png);
+}
+
+#s .love.love7
+{
+	animation-delay: -6s;
+	background: url(star7.png);
+}
+
+#s .love.love8
+{
+	animation-delay: -7s;
+	background: url(star8.png);
+}
+@keyframes animate
+{
+	0%,20%,40%,60%,80%,100%
+	{
+		opacity: 0;
+	}
+
+	10%,30%,50%,70%,90%
+	{
+		opacity: 1;
+	}
+}
+@keyframes backgroundmove
+{
+	0%
+	{
+		transform: scale(1);
+
+	}
+	100%
+	{
+		transform: scale(2);
+	}
+}
+
+
+
+#ghost
+{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: url(scooby.jpg);
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+
+}
+
+#ghost h2
+{
+	font-size: 5em;
+	color: #000000;
+	text-transform: uppercase;
+	text-align: center;
+	display: flex;
+}
+
+#ghost h2 span
+{
+	transition: 1.5s;
+}
+
+#ghost h2:hover span
+{
+	filter:blur(20px);
+	opacity: 0;
+	transform: scale(2);
+}
+
+#ghost h2 span:nth-child(10n+1)
+{
+	transition-delay: 0s;
+}
+
+
+#ghost h2 span:nth-child(10n+2)
+{
+	transition-delay: 0.1s;
+}
+
+#ghost h2 span:nth-child(10n+3)
+{
+	transition-delay: 0.2s;
+}
+
+#ghost h2 span:nth-child(10n+4)
+{
+	transition-delay: 0.3s;
+}
+
+#ghost h2 span:nth-child(10n+5)
+{
+	transition-delay: 0.4s;
+}
+
+#ghost h2 span:nth-child(10n+6)
+{
+	transition-delay: 0.5s;
+}
+
+#ghost h2 span:nth-child(10n+7)
+{
+	transition-delay: 0.6s;
+}
+
+#ghost h2 span:nth-child(10n+8)
+{
+	transition-delay: 0.7s;
+}
+
+#ghost h2 span:nth-child(10n+9)
+{
+	transition-delay: 0.8s;
+}
+
+
+#ghost h2 span:nth-child(10n+10)
+{
+	transition-delay: 0.9s;
+}
+
+
+#flexx
+{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	display:flex;
+	border: 3px solid #000;
+
+}
+
+#flexx .slide
+{
+	position: relative;
+	background: #0f0;
+	height: 100%;
+	flex: 1;
+	border-right: 2px solid #000;
+	overflow:hidden;
+	transition: 0.5s ease-in-out;
+
+}
+
+#flexx .slide:last-child
+{
+	border-right: none;
+	
+}
+
+#flexx .slide:hover
+{
+	flex-grow: 10;
+
+}
+
+#flexx .slide:nth-child(1)
+{
+	background: url(bluebabe.jpg);
+	
+
+	
+
+}
+
+#flexx .slide:nth-child(2)
+{
+	background: url(angel1.jpg);
+	background-position: center center;
+	
+
+}
+
+#flexx .slide:nth-child(3)
+{
+	background: url(ethnic.jpg);
+	
+	
+
+}
+
+#flexx .slide:nth-child(4)
+{
+	background: url(heavenly1.jpg);
+	
+	
+	
+
+}
+
+#flexx .slide:nth-child(5)
+{
+	background: url(yo.jpg);
+	
+	background-position: center center;
+
+}
+
+
+
+
+
+#flexx .slide .content
+{
+	position: absolute;
+	bottom: 0;
+	margin: 40px;
+	padding: 30px;
+	background: #000;
+	color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateY(100px);
+
+
+
+}
+
+#flexx .slide:hover .content
+{
+
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    transform: translateY(0);
+
+
+}
